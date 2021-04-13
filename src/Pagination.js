@@ -1,4 +1,4 @@
-const Pagination = ({postsPerPage, totalPosts, handlePaginate}) => {
+const Pagination = ({postsPerPage, totalPosts, handlePaginate, currentPage}) => {
 
    const pageNumbers = [];
 
@@ -9,7 +9,7 @@ const Pagination = ({postsPerPage, totalPosts, handlePaginate}) => {
    return (
       <div className="page-numbers">
          {pageNumbers.map(number => {
-            return <button onClick={() => handlePaginate(number)} key={number} className="page-buttons">{number}</button>
+            return <button onClick={() => handlePaginate(number)} key={number} className={`page-buttons ${currentPage === number ? 'active-button' : null}`}>{number}</button>
          })}
       </div>
      );

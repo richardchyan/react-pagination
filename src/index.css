@@ -57,13 +57,23 @@ code {
   border: none;
 }
 
-.page-btn {
+.page-numbers {
+  margin-top: 5rem;
+}
+
+.page-buttons {
   border: none;
+  border-radius: 3px;
   font-size: 2rem;
   padding: 5px 15px;
 }
 
-.active-btn {
-  background-color: cornflowerblue;
+.page-buttons:hover {
+  cursor: pointer;
+}
+
+.active-button {
+  background-color: rgb(148, 184, 250);
   border: none;
 }
+

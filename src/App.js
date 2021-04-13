@@ -44,7 +44,7 @@ function App() {
             <Follower key={follower.id} {...follower}/>
           ))}
         </div>
-        <Pagination postsPerPage={postsPerPage} totalPosts={posts.length} handlePaginate={handlePaginate} />
+        <Pagination postsPerPage={postsPerPage} totalPosts={posts.length} handlePaginate={handlePaginate} currentPage={currentPage} />
         
       </div>
     </div>
